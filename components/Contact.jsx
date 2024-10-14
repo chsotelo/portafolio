@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { Phone, Linkedin, Mail } from "lucide-react"; // Importamos los iconos de mensaje
+import { Phone, Linkedin, Mail, Github } from "lucide-react"; // Importamos los iconos de mensaje
 import Wsp from "@/components/icon/wsp";
 
 const contactData = {
@@ -52,6 +52,17 @@ export default function Contact() {
               href={`mailto:${contactData.email}?subject=Consulta%20desde%20mi%20portafolio%20web&body=Hola,%20me%20estoy%20poniendo%20en%20contacto%20a%20través%20de%20tu%20portafolio%20web.%20Me%20gustaría%20saber%20más%20sobre%20los%20servicios%20de%20desarrollo%20web%20que%20ofreces.`}
               className="text-primary">
               <Mail className="h-6 w-6" />
+            </a>
+          </Button>
+
+          {/* GitHub */}
+          <Button asChild variant="ghost" size="icon">
+            <a
+              href="https://github.com/chsotelo"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary">
+              <Github className="h-6 w-6" />
             </a>
           </Button>
         </div>
